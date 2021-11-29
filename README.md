@@ -35,7 +35,7 @@ Jupyter Notebooks using the scripts and data
 | [cloudfraction.py](https://github.com/clstauffer/rcemip/tree/main/scripts/cloudfraction.py) | [Cloud Fraction](https://github.com/clstauffer/rcemip/tree/main/examples/) |
 | [conditionalstats.py](https://github.com/clstauffer/rcemip/tree/main/scripts/conditionalstats.py) | [Conditional Statistics](https://github.com/clstauffer/rcemip/tree/main/examples/) |
 | [divergence.py](https://github.com/clstauffer/rcemip/tree/main/scripts/divergence.py) | [Radiatively-Driven Divergence](https://github.com/clstauffer/rcemip/tree/main/examples/) |
-| [midlevelscaling.py](https://github.com/clstauffer/rcemip/tree/main/scripts/midlevelscaling.py) | [Mid-level Scaling](https://github.com/clstauffer/rcemip/tree/main/data/) and [Mid-level Scaling Profiles](https://github.com/clstauffer/rcemip/tree/main/examples/) |
+| [midlevelscaling.py](https://github.com/clstauffer/rcemip/tree/main/scripts/midlevelscaling.py) | [Mid-level Scaling](https://github.com/clstauffer/rcemip/tree/main/examples/) |
 
 Figures
 ----------
