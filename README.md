@@ -17,10 +17,10 @@ The below table has the lcoation of the input data, output data, and example usa
 
 | Code | Input Data | Output Data | Example Usage |
 |:-----|:-----------|:------------|:--------------|
-| [cloudfraction.py](https://github.com/clstauffer/rcemip/tree/main/scripts/cloudfraction.py) | [DKRZ 3D model output](http://hdl.handle.net/21.14101/d4beee8e-6996-453e-bbd1-ff53b6874c0e) | [Cloud Fraction Profiles](https://github.com/clstauffer/rcemip/tree/main/data/) | [cloudfraction.ipynb](https://github.com/clstauffer/rcemip/tree/main/examples/) |
+| [cloudfraction.py](https://github.com/clstauffer/rcemip/tree/main/scripts/cloudfraction.py) | [DKRZ 3D model output](http://hdl.handle.net/21.14101/d4beee8e-6996-453e-bbd1-ff53b6874c0e) | [Cloud Fraction Profiles](https://github.com/clstauffer/rcemip/tree/main/data/) | [cloudfraction.ipynb](https://github.com/clstauffer/rcemip/tree/main/examples/cloudfraction.ipynb) |
 | [conditionalstats.py](https://github.com/clstauffer/rcemip/tree/main/scripts/conditionalstats.py) | [DKRZ 3D model output](http://hdl.handle.net/21.14101/d4beee8e-6996-453e-bbd1-ff53b6874c0e) | [Conditional Statistics Profiles](https://github.com/clstauffer/rcemip/tree/main/data/) | [conditionalstats.ipynb](https://github.com/clstauffer/rcemip/tree/main/examples/) |
 | [divergence.py](https://github.com/clstauffer/rcemip/tree/main/scripts/divergence.py) | [DKRZ 1D model output](http://hdl.handle.net/21.14101/d4beee8e-6996-453e-bbd1-ff53b6874c0e) | [Radiatively-Driven Divergence Profiles](https://github.com/clstauffer/rcemip/tree/main/data/) | [divergence.ipynb](https://github.com/clstauffer/rcemip/tree/main/examples/) |
-| [midlevelscaling.py](https://github.com/clstauffer/rcemip/tree/main/scripts/midlevelscaling.py) | [Conditional Statistics](https://github.com/clstauffer/rcemip/tree/main/data/) and [Mid-level Scaling Profiles](https://github.com/clstauffer/rcemip/tree/main/data/) | [Mid-level Scaling Profiles](https://github.com/clstauffer/rcemip/tree/main/data/) | [midlevel.ipynb](https://github.com/clstauffer/rcemip/tree/main/examples/) |
+| [midlevelscaling.py](https://github.com/clstauffer/rcemip/tree/main/scripts/midlevelscaling.py) | [Conditional Statistics](https://github.com/clstauffer/rcemip/tree/main/data/) and [Mid-level Scaling Profiles](https://github.com/clstauffer/rcemip/tree/main/data/) | [Mid-level Scaling Profiles](https://github.com/clstauffer/rcemip/tree/main/data/) | [midlevel.ipynb](https://github.com/clstauffer/rcemip/tree/main/examples/midlevel.ipynb) |
 
 Figures
 ----------
