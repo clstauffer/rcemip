@@ -6,9 +6,9 @@ Python scripts are provided that were used for the analysis in the references li
 
 References
 ----------
-Wing, A.A., **C.L. Stauffer**, T. Becker, K.A. Reed, M.-S. Ahn, N.P. Arnold, S. Bony, M. Branson, G.H. Bryan, J.-P. Chaboureau, S.R. de Roode, K. Gayatri, C. Hohenegger, I.-K. Hu, F. Jansson, T.R. Jones, M. Khairoutdinov, D. Kim, Z.K. Martin, S. Matsugishi, B. Medeiros, H. Miura, Y. Moon, S.K. Müller, T. Ohno, M. Popp, T. Prabhakaran, D. Randall, R. Rios-Berrios, N. Rochetin, R. Roehrig, D.M. Romps, J.H. Ruppert, Jr., M. Satoh, L.G. Silvers, M.S. Singh, B. Stevens, L. Tomassini, C.C. van Heerwaarden, S. Wang, and M. Zhao (2020): Clouds and convective self-aggregation in a multi-model ensemble of radiative-convective equilibrium simulations, J. Adv. Model. Earth Syst., 12, e2020MS002138, [doi:10.1029/2020MS002138](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020MS002138).
+**Stauffer, C.L.** and A.A. Wing (2022): Properties, Changes, and Controls of Deep-Convecting Clouds in Radiative-Convective Equilibrium, J. Adv. Model. Earth Syst., in review. 
 
-**Stauffer, C.L.** and A.A. Wing (2021): Properties, Changes, and Controls of Deep-Convecting Clouds in Radiative-Convective Equilibrium, J. Adv. Model. Earth Syst., in review. 
+Wing, A.A., **C.L. Stauffer**, T. Becker, K.A. Reed, M.-S. Ahn, N.P. Arnold, S. Bony, M. Branson, G.H. Bryan, J.-P. Chaboureau, S.R. de Roode, K. Gayatri, C. Hohenegger, I.-K. Hu, F. Jansson, T.R. Jones, M. Khairoutdinov, D. Kim, Z.K. Martin, S. Matsugishi, B. Medeiros, H. Miura, Y. Moon, S.K. Müller, T. Ohno, M. Popp, T. Prabhakaran, D. Randall, R. Rios-Berrios, N. Rochetin, R. Roehrig, D.M. Romps, J.H. Ruppert, Jr., M. Satoh, L.G. Silvers, M.S. Singh, B. Stevens, L. Tomassini, C.C. van Heerwaarden, S. Wang, and M. Zhao (2020): Clouds and convective self-aggregation in a multi-model ensemble of radiative-convective equilibrium simulations, J. Adv. Model. Earth Syst., 12, e2020MS002138, [doi:10.1029/2020MS002138](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020MS002138).
 
 Input, Output, and Examples
 ----------
