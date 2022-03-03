@@ -128,7 +128,6 @@ z | height | km
 tabs_mean | temperature | K
 cld_mean | cloud fraction | -
 rhenv_mean | environmental relative humidity | -
-JT_mean | 
 Jp_int | troposphere-integrated radiative cooling rate | 
 cld_scaling | cloud fraction diagnosed by MLS | -
 
@@ -138,14 +137,14 @@ Variable description is defiined in Section 2.4.1 of Stauffer and Wing (2022, in
 
 File Name | Description | Units
 ---|---|---
-midlevel-cf_metrics_large_exp.csv | N/A
-midlevel-cf_metrics_large_par.csv | N/A
-mlsd_metrics_large_exp.csv | N/A
-rhum_metrics_large_exp.csv | 
-wavg_metrics_large_exp.csv | 
-dsea_metrics_large_exp.csv | 
-javg_metrics_large_exp.csv | 
-jint_metrics_large_exp.csv | 
+midlevel-cf_metrics_large_exp.csv | N/A | 
+midlevel-cf_metrics_large_par.csv | N/A | 
+mlsd_metrics_large_exp.csv | N/A | 
+rhum_metrics_large_exp.csv | enviornmental relative humidity | 
+wavg_metrics_large_exp.csv | cloudy updraft | 
+dsea_metrics_large_exp.csv | DSE excess | 
+javg_metrics_large_exp.csv | radiative cooling rate | 
+jint_metrics_large_exp.csv | integrated radiative cooling rate | 
 
 Below, $\gamma$ corresponds to the variable corresponding to whichever file in the table above
 
