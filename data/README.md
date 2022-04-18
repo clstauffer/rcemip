@@ -4,20 +4,12 @@
 
 ### Cloud Anvil Height, Temperature, and Cloud Fraction
 
-File Name | Domain | Cloud Fraction Definition | Model Convection Type
----|---|---|---
-small_cfv1_all.csv | small | cfv1 | explicit and parameterized
-small_cfv1_exp.csv | small | cfv1 | explicit
-small_cfv1_par.csv | small | cfv1 | parameterized
-large_cfv1_all.csv | large | cfv1 | explicit and parameterized
-large_cfv1_exp.csv | large | cfv1 | explicit
-large_cfv1_par.csv | large | cfv1 | parameterized
-small_cfv2_all.csv | small | cfv2 | explicit and parameterized
-small_cfv2_exp.csv | small | cfv2 | explicit
-small_cfv2_par.csv | small | cfv2 | parameterized
-large_cfv2_all.csv | large | cfv2 | explicit and parameterized
-large_cfv2_exp.csv | large | cfv2 | explicit
-large_cfv2_par.csv | large | cfv2 | parameterized
+File Name | Domain | Cloud Fraction Definition
+---|---|---
+anvil-properties_large_cfv1.csv | large | cfv1
+anvil-properties_large_cfv2.csv | large | cfv2
+anvil-properties_small_cfv1.csv | small | cfv1
+anvil-properties_small_cfv2.csv | small | cfv2
 
 Variable | Description | Unit
 ---|---|---
