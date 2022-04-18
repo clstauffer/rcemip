@@ -52,8 +52,8 @@ zg_avg | height | km
 
 File Name | Description
 ---|---
-rdiv_large.csv | large domain peak Rd properties
-rdiv_small.csv | small domain peak Rd properties
+rdiv-properties_large.csv | large domain peak Rd properties
+rdiv-properties_small.csv | small domain peak Rd properties
 
 Variable | Description | Unit
 ---|---|---
