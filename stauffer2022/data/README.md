@@ -143,7 +143,7 @@ Below, &gamma; corresponds to the variable corresponding to whichever file in th
 Variable | Description
 ---|---
 Model | Model Name
-Zavg | $<\gamma_{avg}>_z$
+Zavg | &gamma;<sub>avg<sub>z</sub></sub>$<\gamma_{avg}>_z$
 Zrng | $<\gamma_{range}>_z$
 Zdif | $<\gamma_{\Delta}>_z$
 Tavg | $<\gamma_{avg}>_T$
