@@ -109,18 +109,18 @@ Ca | RCEMIP Alpha Color | N/A
 
 File Name | Description
 ---|---
-midlevel_profiles_1D-derived.tar.gz | conditional statistics using `cfv1` for all models, domains, and SSTs
-midlevel_profiles_3D-derived.tar.gz | conditional statistics using `cfv2` for all models, domains, and SSTs
+midlevel_profiles_cfv1.tar.gz | conditional statistics using `cfv1` for all models, domains, and SSTs
+midlevel_profiles_cfv2.tar.gz | conditional statistics using `cfv2` for all models, domains, and SSTs
 
 The derived profiles are below, for a complete list of conditional statistics profiles included in this data set please see `conditional_statistics.md`
 
 Variable | Description | Unit
 ---|---|---
-z | height | km
+z | height | m
 tabs_mean | temperature | K
 cld_mean | cloud fraction | -
 rhenv_mean | environmental relative humidity | -
-Jp_int | troposphere-integrated radiative cooling rate | 
+Jp_int | troposphere-integrated radiative cooling rate | Wm<sup>-1</sup>
 cld_scaling | cloud fraction diagnosed by MLS | -
 
 ### Mid-level propertye metrics as used in Stauffer and Wing (2022, in review)
@@ -133,12 +133,12 @@ midlevel-cf_metrics_large_exp.csv | N/A |
 midlevel-cf_metrics_large_par.csv | N/A | 
 mlsd_metrics_large_exp.csv | N/A | 
 rhum_metrics_large_exp.csv | enviornmental relative humidity | 
-wavg_metrics_large_exp.csv | cloudy updraft | 
-dsea_metrics_large_exp.csv | DSE excess | 
-javg_metrics_large_exp.csv | radiative cooling rate | 
-jint_metrics_large_exp.csv | integrated radiative cooling rate | 
+wavg_metrics_large_exp.csv | cloudy updraft | ms<sup>-1</sup>
+dsea_metrics_large_exp.csv | DSE excess | Jm<sup>-3</sup>
+javg_metrics_large_exp.csv | radiative cooling rate | Wm<sup>-2</sup>K<sup>-1</sup>
+jint_metrics_large_exp.csv | integrated radiative cooling rate | Wm<sup>-2</sup>
 
-Below, $\gamma$ corresponds to the variable corresponding to whichever file in the table above
+Below, &gamma; corresponds to the variable corresponding to whichever file in the table above
 
 Variable | Description
 ---|---
