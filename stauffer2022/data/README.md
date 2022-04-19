@@ -36,17 +36,17 @@ rad-driven-div_profiles.tar.gz | profiles of radiatively-driven divergence for a
 
 Variable | Description | Unit
 ---|---|---
-ss_avg | static stability | 
-pa_avg | pressure | hPa
+ss_avg | static stability | KPa<sup>-1</sup>
+pa_avg | pressure | Pa
 ta_avg | temperature | K
 qr_avg | clear sky radiative cooling | day<sup>-1</sup>
-wa_full | clear sky vertical velocity | 
+wa_full | clear sky vertical velocity | Pas<sup>-1</sup>
 rd_full | radiatively-driven divergence | day<sup>-1</sup>
-wa_300s | wa_full using ss_avg at 300 K | 
+wa_300s | wa_full using ss_avg at 300 K | Pas<sup>-1</sup>
 rd_300s | rd_full using ss_avg at 300 K | day<sup>-1</sup>
-wa_300q | wa_full using qr_avg at 300 K | 
+wa_300q | wa_full using qr_avg at 300 K | Pas<sup>-1</sup>
 rd_300q | rd_full using qr_avg at 300 K | day<sup>-1</sup>
-zg_avg | height | km
+zg_avg | height | m
 
 ### Peak Radiatively-Driven Divergence Properties
 
@@ -94,12 +94,12 @@ ZG300Q305 | 305 K height at peak Rd using Qr(300 K) | km
 TA300Q295 | 295 K temperature at peak Rd using Qr(300 K) | K
 TA300Q300 | 300 K temperature at peak Rd using Qr(300 K) | K
 TA300Q305 | 305 K temperature at peak Rd using Qr(300 K) | K
-STAB295 | 295 K static stability at peak Rd |
-STAB300 | 300 K static stability at peak Rd |
-STAB305 | 305 K static stability at peak Rd |
-S220295 | 295 K 220K static stability at peak Rd |
-S220300 | 300 K 220K static stability at peak Rd |
-S220305 | 305 K 220K static stability at peak Rd |
+STAB295 | 295 K static stability at peak Rd | KPa<sup>-1</sup>
+STAB300 | 300 K static stability at peak Rd | KPa<sup>-1</sup>
+STAB305 | 305 K static stability at peak Rd | KPa<sup>-1</sup>
+S220295 | 295 K 220K static stability at peak Rd | KPa<sup>-1</sup>
+S220300 | 300 K 220K static stability at peak Rd | KPa<sup>-1</sup>
+S220305 | 305 K 220K static stability at peak Rd | KPa<sup>-1</sup>
 Cr | RCEMIP Red Color | N/A
 Cb | RCEMIP Blue Color | N/A
 Cg | RCEMIP Green Color | N/A
