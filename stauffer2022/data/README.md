@@ -148,5 +148,5 @@ Zrng | &gamma;<sub>rng<sub>z</sub></sub>
 Zdif | &gamma;<sub>&Delta;<sub>z</sub></sub>
 Tavg | &gamma;<sub>avg<sub>T</sub></sub>
 Trng | &gamma;<sub>rng<sub>T</sub></sub>
-Tdif | &gamma;<sub>&Delta;<sub>t</sub></sub>
+Tdif | &gamma;<sub>&Delta;<sub>T</sub></sub>
 Color | RCEMIP colors; [red,blue,green,alpha]
