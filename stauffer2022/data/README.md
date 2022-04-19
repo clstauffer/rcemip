@@ -129,10 +129,10 @@ Variable description is defiined in Section 2.4.1 of Stauffer and Wing (2022, in
 
 File Name | Description | Units
 ---|---|---
-midlevel-cf_metrics_large_exp.csv | N/A | 
-midlevel-cf_metrics_large_par.csv | N/A | 
-mlsd_metrics_large_exp.csv | N/A | 
-rhum_metrics_large_exp.csv | enviornmental relative humidity | 
+midlevel-cf_metrics_large_exp.csv | mid-level cloud fraction, models with explicit convection | -
+midlevel-cf_metrics_large_par.csv | mid-level cloud fraction, models with parameterized convection | -
+mlsd_metrics_large_exp.csv | mid-level scaling diagnostic | -
+rhum_metrics_large_exp.csv | enviornmental relative humidity | -
 wavg_metrics_large_exp.csv | cloudy updraft | ms<sup>-1</sup>
 dsea_metrics_large_exp.csv | DSE excess | Jm<sup>-3</sup>
 javg_metrics_large_exp.csv | radiative cooling rate | Wm<sup>-2</sup>K<sup>-1</sup>
@@ -143,10 +143,10 @@ Below, &gamma; corresponds to the variable corresponding to whichever file in th
 Variable | Description
 ---|---
 Model | Model Name
-Zavg | &gamma;<sub>avg<sub>z</sub></sub>$<\gamma_{avg}>_z$
-Zrng | $<\gamma_{range}>_z$
-Zdif | $<\gamma_{\Delta}>_z$
-Tavg | $<\gamma_{avg}>_T$
-Trng | $<\gamma_{range}>_T$
-Tdif | $<\gamma_{\Delta}>_T$
+Zavg | &gamma;<sub>avg<sub>z</sub></sub>
+Zrng | &gamma;<sub>rng<sub>z</sub></sub>
+Zdif | &gamma;<sub>&Delta;<sub>z</sub></sub>
+Tavg | &gamma;<sub>avg<sub>T</sub></sub>
+Trng | &gamma;<sub>rng<sub>T</sub></sub>
+Tdif | &gamma;<sub>&Delta;<sub>t</sub></sub>
 Color | RCEMIP colors; [red,blue,green,alpha]
