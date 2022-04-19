@@ -129,9 +129,9 @@ Variable description is defiined in Section 2.4.1 of Stauffer and Wing (2022, in
 
 File Name | Description | Units
 ---|---|---
-midlevel-cf_metrics_large_exp.csv | mid-level cloud fraction, models with explicit convection | -
-midlevel-cf_metrics_large_par.csv | mid-level cloud fraction, models with parameterized convection | -
-mlsd_metrics_large_exp.csv | mid-level scaling diagnostic | -
+mlcf_metrics_large_exp.csv | mid-level cloud fraction, explicit convection | -
+mlcf_metrics_large_par.csv | mid-level cloud fraction, parameterized convection | -
+mlsd_metrics_large_exp.csv | mid-level scaling diagnostic, explicit convection | -
 rhum_metrics_large_exp.csv | enviornmental relative humidity | -
 wavg_metrics_large_exp.csv | cloudy updraft | ms<sup>-1</sup>
 dsea_metrics_large_exp.csv | DSE excess | Jm<sup>-3</sup>
