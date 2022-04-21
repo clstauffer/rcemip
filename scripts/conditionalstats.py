@@ -34,8 +34,13 @@ def calc_qsatw(tair, phPa):
     for index,coeffs in enumerate(esatw_coeffs):
         esatw = esatw + coeffs*tair**(index)
 
+    # saturation over water for T>tmax_ice
+    # saturation over ice for T<tmin_ice
+    # weighted average for tmin_ice<T<tmax_ice
     f_ew = (tair>tmax_ice) + (tair<=tmax_ice)*(tair>tmin_ice)*(tair-tmin_ice)/(tmax_ice-tmin_ice)
     esat = f_ew * esatw
+
+    # correction for T<185
     esat = (esat*((tair+273.15)>185)) + ((0.00763685 + (tair*(0.000151069+(tair*7.48215e-07))))*((tair+273.15)<=185))
     qsatw = 0.622*esat/(phPa-esat)
 
@@ -103,19 +108,19 @@ def calcstat(cw,ci,pw,pi,ta,pa,wa,qv,radqr,z,time,cldver='cfv2'):
     if cldver == 'cfv2':
         cldy = (1e-5)
 
-    cld   = (tw > cldy).astype(int)                # cloud fraction
-    cor   = ((tvirt > tva) & (w > 2)).astype(int)  # core fraction
-    cordn = ((tvirt < tva) & (w < -2)).astype(int) # downdraft core fraction
-    satup = ((tw > cldy) & (w >= 0)).astype(int)   # saturated updraft fraction
-    satdn = ((tw > cldy) & (w < 0)).astype(int)    # saturated downdraft fraction
-    env   = ((tw <= cldy)).astype(int)             # cloud-free environment fraction
+    cld   = (tw > cldy).astype(int)
+    cor   = ((tvirt > tva) & (w > 2)).astype(int)
+    cordn = ((tvirt < tva) & (w < -2)).astype(int)
+    satup = ((tw > cldy) & (w >= 0)).astype(int)
+    satdn = ((tw > cldy) & (w < 0)).astype(int)
+    env   = ((tw <= cldy)).astype(int)
 
-    hydro = ((tw > cldy) | (tp > 1e-4)).astype(int)                        # hydrometer fraction
-    mcup  = (((tw > cldy) & (0.5*w>0)).astype(int))*(rho*0.5*w)            # updraft cloud mass flux
-    mcdns = (((tw > cldy) & (0.5*w<=0)).astype(int))*(rho*0.5*w)           # downdraft saturated cloud mass flux
-    mcdnu = (((tw <= cldy) & (tp > 1e-4) & (w<0)).astype(int))*(rho*0.5*w) # downdraft unsaturated cloud mass flux
-    mc    = mcup+mcdns+mcdnu                                               # cloud mass flux
-    mcrup = ((tvirt > tva) & (w > 2)).astype(int)*(rho*0.5*w)              # updraft core mass flux
+    hydro = ((tw > cldy) | (tp > 1e-4)).astype(int)
+    mcup  = (((tw > cldy) & (0.5*w>0)).astype(int))*(rho*0.5*w)
+    mcdns = (((tw > cldy) & (0.5*w<=0)).astype(int))*(rho*0.5*w)
+    mcdnu = (((tw <= cldy) & (tp > 1e-4) & (w<0)).astype(int))*(rho*0.5*w)
+    mc    = mcup+mcdns+mcdnu
+    mcrup = ((tvirt > tva) & (w > 2)).astype(int)*(rho*0.5*w)
 
     dsecdn = ((tvirt < tva) & (w < -2)).astype(int)*dse
     dsecld = (tw > cldy).astype(int)*dse
@@ -157,19 +162,19 @@ def calcstat(cw,ci,pw,pi,ta,pa,wa,qv,radqr,z,time,cldver='cfv2'):
     qtsup[qtsup==0] = np.nan
 
     # domain averages
-    cld   = (domainavg(cld)).reshape((len(time),len(z)))   # cloud fraction
-    cor   = (domainavg(cor)).reshape((len(time),len(z)))   # core fraction
-    cordn = (domainavg(cordn)).reshape((len(time),len(z))) # downdraft core fraction
-    satup = (domainavg(satup)).reshape((len(time),len(z))) # saturated updraft fraction
-    satdn = (domainavg(satdn)).reshape((len(time),len(z))) # saturated downdraft fraction
-    env   = (domainavg(env)).reshape((len(time),len(z)))   # cloud-free environment fraction
+    cld   = (domainavg(cld)).reshape((len(time),len(z)))
+    cor   = (domainavg(cor)).reshape((len(time),len(z)))
+    cordn = (domainavg(cordn)).reshape((len(time),len(z)))
+    satup = (domainavg(satup)).reshape((len(time),len(z)))
+    satdn = (domainavg(satdn)).reshape((len(time),len(z)))
+    env   = (domainavg(env)).reshape((len(time),len(z)))
 
-    hydro = (domainavg(hydro)).reshape((len(time),len(z))) # hydrometer fraction
-    mcup  = (domainavg(mcup)).reshape((len(time),len(z)))  # updraft cloud mass flux
-    mcdns = (domainavg(mcdns)).reshape((len(time),len(z))) # downdraft saturated cloud mass flux
-    mcdnu = (domainavg(mcdnu)).reshape((len(time),len(z))) # downdraft unsaturated cloud mass flux
-    mc    = (domainavg(mc)).reshape((len(time),len(z)))    # cloud mass flux
-    mcrup = (domainavg(mcrup)).reshape((len(time),len(z))) # updraft core mass flux
+    hydro = (domainavg(hydro)).reshape((len(time),len(z)))
+    mcup  = (domainavg(mcup)).reshape((len(time),len(z)))
+    mcdns = (domainavg(mcdns)).reshape((len(time),len(z)))
+    mcdnu = (domainavg(mcdnu)).reshape((len(time),len(z)))
+    mc    = (domainavg(mc)).reshape((len(time),len(z)))
+    mcrup = (domainavg(mcrup)).reshape((len(time),len(z)))
 
     rho   = (domainavg(rho)).reshape((len(time),len(z)))
     tabs  = (domainavg(ta)).reshape((len(time),len(z)))

@@ -63,7 +63,7 @@ def calc_esat(tair):
 
 def midlevelscaling(condstatsfile):
     """
-    Calculates mid-level scaling of Cronin and Wing 2017 as used in Stauffer and Wing
+    Calculates mid-level scaling of Cronin and Wing 2017 as used in Stauffer and Wing (2022)
     INPUT
         condstatsfile: conditional statistics file
     OUTPUT
@@ -251,7 +251,7 @@ def intavg(xx295,xx300,xx305,yy295,yy300,yy305,yyavg,vinv):
 
 def mlsmetric(var295,var300,var305,trop295,trop300,trop305,z295,z300,z305,zavg,t295,t300,t305,tavg):
     """
-    Calculates the metrics for mid-level cloud fraction analysis used in Stauffer and Wing
+    Calculates the metrics for mid-level cloud fraction analysis used in Stauffer and Wing (2022)
     INPUT
         var295,var300,var305: variable profiles
         trop295,trop300,trop305: tropopause index, calculated in midlevelscaling
@@ -292,7 +292,8 @@ def mlsmetric(var295,var300,var305,trop295,trop300,trop305,z295,z300,z305,zavg,t
 
 def ratio(t,a,b,e,f,g):
     """
-    Saves the numerator and denominator separately for the mid-level scaling of Cronin and Wing 2017
+    Saves the numerator and denominator separately for the mid-level 
+        scaling diagnostic (Equation 5 in Cronin and Wing, 2017 and Stauffer and Wing, 2020)
     INPUT
         t: temperature [K]
         a: Jp_int (calculated in midlevelscaling)
