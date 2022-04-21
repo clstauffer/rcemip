@@ -272,18 +272,19 @@ def mlsmetric(var295,var300,var305,trop295,trop300,trop305,z295,z300,z305,zavg,t
     t295,t300,t305 = t295[:lowesttrop],t300[:lowesttrop],t305[:lowesttrop]
 
     # temperature axis interpolation
-    __,__,__,__,vartrng,vartdif = intavg(var295,var300,var305,t295,t300,t305,tavg,True)
+    __,__,__,vartavg,vartrng,vartdif = intavg(var295,var300,var305,t295,t300,t305,tavg,True)
     # height axis interpolation
     __,__,__,varzavg,varzrng,varzdif = intavg(var295,var300,var305,z295,z300,z305,zavg,False)
 
     # collapse profiles to one number (vertical average)
     varzavgm = np.average(varzavg)
+    vartavgm = np.average(vartavg)
     vartrngm = np.average(vartrng)
     varzrngm = np.average(varzrng)
     vartdifm = np.average(vartdif)
     varzdifm = np.average(varzdif)
 
-    mets={'Average Height Profile Metric':varzavgm,
+    mets={'Average Height Profile Metric':varzavgm,'Average Temperature Profile Metric':vartavgm,
           'Range Height Profile Metric':varzrngm,'Range Temperature Profile Metric':vartrngm,
           'Difference Height Profile Metric':varzdifm,'Difference Temperature Profile Metric':vartdifm
          }
