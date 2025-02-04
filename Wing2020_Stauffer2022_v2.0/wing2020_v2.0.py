@@ -57,7 +57,7 @@ vcrh_slopes = calc_roc(df295,df300,df305,df295.MODEL.values,'VCRH','large')
 subf_slopes = subf_slopes.sort_values(by=['scheme','295-305'],ascending=True,na_position='first')
 iorg_slopes = iorg_slopes.reindex(subf_slopes.index)
 vcrh_slopes = vcrh_slopes.reindex(subf_slopes.index)
-slopes295305 = pd.DataFrame({'MODEL':df295.MODEL.values,'SUBFRAC':subf_slopes['295-305'],'IORG':iorg_slopes['295-305'],'VCRH':vcrh_slopes['295-305']})
+slopes295305 = pd.DataFrame({'MODEL':subf_slopes.MODEL.values,'SUBFRAC':subf_slopes['295-305'],'IORG':iorg_slopes['295-305'],'VCRH':vcrh_slopes['295-305']})
 
 if vtype == 'pw':
     ylabelss = ['d$f_{sub}$\dSST','d$I_{ORG}$\dSST','d$\sigma^2_{PW/<PW>}$\dSST']
